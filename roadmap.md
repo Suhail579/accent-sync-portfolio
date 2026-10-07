@@ -1,3 +1,3 @@
 # Portfolio
-- [ ] Build résumé-only portfolio with portrait and matching emerald background.
-- [ ] Verify page and theme toggle.
+- [x] Build résumé-only portfolio with portrait and matching emerald background.
+- [x] Verify page and theme toggle.
