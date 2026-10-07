@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, ArrowDown, Moon, Sun, Code2, MapPin, Mail, ChevronRight, GraduationCap, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/portrait-cutout.png";
+import portrait from "@/assets/portrait-new.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
