@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, ArrowDown, Moon, Sun, Code2, MapPin, Mail, ChevronRight, GraduationCap, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/portrait.jpg.asset.json";
+import portrait from "@/assets/portrait-cutout.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
@@ -56,7 +56,7 @@ function Portfolio() {
           <div className="hero-actions rise rise-5"><Button size="lg" asChild className="shine-btn bg-grad"><a href="#projects">Explore my work <ArrowUpRight /></a></Button><Button variant="outline" size="lg" asChild><a href={`mailto:${email}`}>Let’s connect <Mail /></a></Button></div>
           <div className="hero-chips rise rise-6">{["Python", "Django", "React.js"].map((s,i) => <span key={s} className={`chip-float d${i}`}><Code2 size={14}/>{s}</span>)}</div>
         </div>
-        <div className="portrait-area rise rise-3"><div className="portrait-glow glow-anim"/><div className="portrait-frame portrait-float"><img src={portrait.url} alt="Muhammed Suhail K.S seated outdoors"/><div className="portrait-caption"><span className="status-dot"/><span>DEVELOPER. PROBLEM SOLVER.</span><ArrowUpRight size={18}/></div></div><span className="portrait-index">01 / THE DEVELOPER</span></div>
+        <div className="portrait-area rise rise-3"><div className="portrait-glow glow-anim"/><div className="portrait-frame portrait-float"><img src={portrait} alt="Portrait of Muhammed Suhail K.S"/><div className="portrait-caption"><span className="status-dot"/><span>DEVELOPER. PROBLEM SOLVER.</span><ArrowUpRight size={18}/></div></div><span className="portrait-index">01 / THE DEVELOPER</span></div>
         <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><ArrowDown size={16}/></a>
       </section>
       <div className="intro-strip"><div className="section-inner strip-inner"><span><MapPin size={16}/> Kochi, Kerala</span><span>Python · Django · React.js</span><span>Full-stack development <ArrowUpRight size={16}/></span></div></div>
